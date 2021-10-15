@@ -5,8 +5,9 @@ import useThemeMode from "../../topbar/customHooks/useThemeMode";
 
 
 
-
 export default function Header(props) {
+  const [showDialog, setShowDialog] = useState(false);
+  const [tabIndex, setTabIndex] = useState(0)
   const [nullValue, setnullValue] = useState(0)
   const {theme} = useThemeMode();
   return (
